@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a responsive web application designed to showcase a feed of skill-based user posts. It provides a clean and visually appealing interface for users to browse various types of achievements, such as projects, certifications, coding ranks, research papers, and internships. The application also includes a sidebar featuring a user dashboard, a leaderboard, and sections for top projects and skills, along with sorting and filtering capabilities for the main feed. This project serves as a front-end demonstration, utilizing dummy data for all content.
 
-## Available Scripts
+## Tech Stack Used
 
-In the project directory, you can run:
+ReactJS: A JavaScript library for building user interfaces, used for creating interactive and component-based UI.
 
-### `npm start`
+Tailwind CSS: A utility-first CSS framework that enables rapid UI development by providing low-level utility classes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+JavaScript (ES6+): The core programming language for the application's logic and interactivity.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Key Features
 
-### `npm test`
+Main Feed (Post Cards):
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ Displays a variety of skill-based posts, including:
 
-### `npm run build`
+  Projects: Title and GitHub link.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  Certifications: Name and certificate link.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  Coding Ranks: Platform and profile link.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  Research Papers: Title and source link.
 
-### `npm run eject`
+  Internships: Role, company name, and offer letter link.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Each post includes non-functional "Like," "Comment," and "Save" options for illustrative purposes.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Relevant skill tags (e.g., #WebDev, #AI) are displayed on each post.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Sidebar / Sectional Panel:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   User Dashboard: A sample/dummy section displaying user information like total posts and likes.
 
-## Learn More
+   Leaderboard: Shows a list of the top 5 users based on a dummy score.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   Top Projects: Highlights a list of top projects with their dummy like counts.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   Top Skills: Displays popular skills and the number of dummy users associated with them.
 
-### Code Splitting
+   Sorting/Filtering Options: Allows users to sort the main feed by "Recent" or "Most Liked" and filter posts by "Category" (e.g., Project, Certification, Coding Rank, etc.).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Responsive Design: The layout is designed to be fully responsive, adapting seamlessly to various screen sizes, from mobile devices to desktops.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
