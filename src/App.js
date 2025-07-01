@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-// Main App Component
 const App = () => {
-  // Dummy data for posts
+  
   const [posts, setPosts] = useState([
     {
       id: 'post1',
@@ -53,7 +52,7 @@ const App = () => {
       type: 'Internship',
       role: 'Software Engineering Intern',
       company: 'Tech Innovators Inc.',
-      link: 'https://www.techinnovators.com/offer-letter-sample.pdf', // Dummy link
+      link: 'https://www.techinnovators.com/offer-letter-sample.pdf',
       description: 'Developed scalable microservices for a large-scale enterprise application.',
       tags: ['#SoftwareDevelopment', '#Backend', '#Java'],
       likes: 150,
@@ -97,7 +96,7 @@ const App = () => {
       id: 'post9',
       type: 'Research Paper',
       title: 'Quantum Computing for Drug Discovery',
-      link: 'https://science.org/doi/10.1126/science.abc1234', // Dummy link
+      link: 'https://science.org/doi/10.1126/science.abc1234',
       description: 'Investigating the potential of quantum algorithms in pharmaceutical research.',
       tags: ['#QuantumComputing', '#Chemistry', '#Research'],
       likes: 60,
@@ -109,7 +108,7 @@ const App = () => {
       type: 'Internship',
       role: 'Data Science Intern',
       company: 'Analytics Solutions Co.',
-      link: 'https://www.analyticssolutions.com/offer-letter-sample.pdf', // Dummy link
+      link: 'https://www.analyticssolutions.com/offer-letter-sample.pdf', 
       description: 'Analyzed large datasets to derive insights and build predictive models.',
       tags: ['#DataScience', '#Python', '#MachineLearning'],
       likes: 130,
@@ -118,7 +117,6 @@ const App = () => {
     },
   ]);
 
-  // Dummy data for sidebar sections
   const [leaderboardUsers, setLeaderboardUsers] = useState([
     { id: 'u1', name: 'Alice Smith', score: 1500 },
     { id: 'u2', name: 'Bob Johnson', score: 1450 },
@@ -139,25 +137,21 @@ const App = () => {
     { id: 'ts3', name: 'AWS', count: 950 },
   ]);
 
-  const [filter, setFilter] = useState('Recent'); // State for sorting/filtering
-  const [categoryFilter, setCategoryFilter] = useState('All'); // State for category filter
+  const [filter, setFilter] = useState('Recent'); 
+  const [categoryFilter, setCategoryFilter] = useState('All'); 
 
-  // Function to sort posts based on filter
   const getSortedAndFilteredPosts = () => {
     let filtered = posts;
 
-    // Apply category filter
     if (categoryFilter !== 'All') {
       filtered = filtered.filter(post => post.type === categoryFilter);
     }
 
-    // Apply sorting
     switch (filter) {
       case 'Most Liked':
         return [...filtered].sort((a, b) => b.likes - a.likes);
       case 'Recent':
       default:
-        // For dummy data, we'll just return as is, or you could add a timestamp
         return filtered;
     }
   };
@@ -442,10 +436,5 @@ const PostCard = ({ post }) => {
     </div>
   );
 };
-
-// Make sure to include the Tailwind CSS CDN in your HTML file's <head> section
-// <script src="https://cdn.tailwindcss.com"></script>
-// And optionally, for the Inter font:
-// <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 export default App;
